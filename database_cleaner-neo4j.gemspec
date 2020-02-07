@@ -6,7 +6,7 @@ require "database_cleaner/neo4j/version"
 Gem::Specification.new do |spec|
   spec.name          = "database_cleaner-neo4j"
   spec.version       = DatabaseCleaner::Neo4j::VERSION
-  spec.authors       = ["Ernesto Tagwerker"]
+  spec.authors       = ["Ernesto Tagwerker", "Micah Geisel"]
   spec.email         = ["ernesto@ombulabs.com"]
 
   spec.summary       = "Strategies for cleaning databases using Neo4j. Can be used to ensure a clean state for testing."
