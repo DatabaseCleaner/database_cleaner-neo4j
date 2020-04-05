@@ -29,6 +29,10 @@ module DatabaseCleaner
         end
       end
 
+      def clean
+        raise NotImplementedError
+      end
+
       def database
         db && default_db.merge(db) || default_db
       end

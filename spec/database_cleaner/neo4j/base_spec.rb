@@ -3,7 +3,7 @@ require 'database_cleaner/spec'
 
 module DatabaseCleaner
   RSpec.describe Neo4j do
-    it { is_expected.to respond_to(:available_strategies) }
+    it_behaves_like "a database_cleaner adapter"
 
     it "has a default_strategy of transaction" do
       expect(described_class.default_strategy).to eq(:transaction)
@@ -17,7 +17,7 @@ module DatabaseCleaner
 
     RSpec.describe ExampleStrategy do
 
-      it_should_behave_like "a generic strategy"
+      it_behaves_like "a database_cleaner strategy"
       it { is_expected.to respond_to(:db) }
       it { is_expected.to respond_to(:db=) }
 
