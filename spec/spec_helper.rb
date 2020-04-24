@@ -1,5 +1,4 @@
 require "bundler/setup"
-require "database_cleaner/neo4j"
 
 if ENV['COVERAGE'] == 'true'
   require "simplecov"
@@ -13,6 +12,8 @@ if ENV['COVERAGE'] == 'true'
   SimpleCov.start
   puts "required simplecov"
 end
+
+require "database_cleaner/neo4j"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
