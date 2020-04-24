@@ -1,18 +1,9 @@
-require "database_cleaner/generic/base"
+require 'neo4j-core'
+require "database_cleaner/strategy"
 
 module DatabaseCleaner
   module Neo4j
-    def self.available_strategies
-      %i[transaction truncation deletion]
-    end
-
-    def self.default_strategy
-      available_strategies.first
-    end
-
-    module Base
-      include ::DatabaseCleaner::Generic::Base
-
+    class Base < Strategy
       def db=(desired_db)
         @db = desired_db == :default ? nil : desired_db
       end
@@ -27,10 +18,6 @@ module DatabaseCleaner
         else
           session
         end
-      end
-
-      def clean
-        raise NotImplementedError
       end
 
       def database

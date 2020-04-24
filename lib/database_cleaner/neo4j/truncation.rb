@@ -1,4 +1,3 @@
-require 'database_cleaner/neo4j/base'
 require 'database_cleaner/neo4j/deletion'
 
 module DatabaseCleaner

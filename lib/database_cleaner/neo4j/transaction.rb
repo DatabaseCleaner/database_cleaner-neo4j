@@ -1,13 +1,9 @@
 require 'database_cleaner/neo4j/base'
-require 'database_cleaner/generic/transaction'
 require 'neo4j-core'
 
 module DatabaseCleaner
   module Neo4j
-    class Transaction
-      include ::DatabaseCleaner::Generic::Transaction
-      include ::DatabaseCleaner::Neo4j::Base
-
+    class Transaction < Base
       attr_accessor :tx
 
       def start
