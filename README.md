@@ -1,5 +1,8 @@
 # Database Cleaner Adapter for Neo4j
 
+## Maintainers Wanted
+**This adapter is currently unmaintained. This means that bugs will not be fixed and features will not be added unless someone else does so. If you're interested in taking over maintenance, please open an issue and tell us about it!**
+
 [![Build Status](https://travis-ci.org/DatabaseCleaner/database_cleaner-neo4j.svg?branch=master)](https://travis-ci.org/DatabaseCleaner/database_cleaner-neo4j)
 [![Code Climate](https://codeclimate.com/github/DatabaseCleaner/database_cleaner-neo4j/badges/gpa.svg)](https://codeclimate.com/github/DatabaseCleaner/database_cleaner-neo4j)
 [![codecov](https://codecov.io/gh/DatabaseCleaner/database_cleaner-neo4j/branch/master/graph/badge.svg)](https://codecov.io/gh/DatabaseCleaner/database_cleaner-neo4j)
